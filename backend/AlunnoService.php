@@ -32,24 +32,30 @@ class Classe
 
 class AlunnoService
 {
-
-    public function aggiungiAlunno(Alunno $alunno, Classe $classe)
+    public function __construct(ClasseRepository $repository, AlunnoRepository $alunnoRepository)
     {
+        $this->repository = $repository;
+        $this->alunnoRepository = $alunnoRepository;
+    }
 
+    public function aggiungiAlunno($classeId, $alunnoId)
+    {
+        $classe = $this->repository->find($classeId);
+        $alunnoDaAggiungere = $this->alunnoRepository->find($alunnoId);
         $alunni = $classe->getAlunni();
 
         if (count($alunni) < 10) {
+            $tmp = false;
             foreach ($alunni as $key => $value)
             {
-                if ($value->getCodiceFiscale() != $alunno->getCodiceFiscale())
+                if ($value->getCodiceFiscale() == $alunnoDaAggiungere->getCodiceFiscale())
                 {
-                    continue;
+                    $tmp = true;
                 }
-                $trovato = true;
             }
-            if (!$trovato)
+            if (!$tmp)
             {
-                $classe->aggiungiAlunno($alunno);
+                $classe->aggiungiAlunno($alunnoDaAggiungere);
             } else {
                 throw new AlunnoGiaPresenteException();
             }
