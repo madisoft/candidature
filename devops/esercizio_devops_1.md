@@ -2,7 +2,8 @@
 
 Attività da svolgere:
 
-1. Utilizzando la command line di aws (tutti i comandi di seguito dovranno essere eseguiti con questo strumento) creare un bucket con il seguente nome nella region eu-west-1:
+1. Installa l'AWS CLI alla versione >= 2 
+2. Utilizzando la command line di aws (tutti i comandi di seguito dovranno essere eseguiti con questo strumento) creare un bucket con il seguente nome nella region eu-west-1:
    ```
    selezione-devops-madisoft-cognomecandidato
    ```
