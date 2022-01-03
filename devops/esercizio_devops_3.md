@@ -4,7 +4,7 @@ Attività da svolgere:
 
 1. Accedi seguendo le istruzioni inviate per email al server fornito per effettuare i test.
 2. Installa l'AWS CLI alla versione >= 2, se non è presente.   
-3. Creare, utilizzando la command line di aws una nuova istanza Ec2 attraverso il seguente template cloudformation:
+3. Creare, utilizzando la command line di aws, una nuova istanza Ec2 attraverso il seguente template cloudformation, imposta come nome dello stack testmadisoft:
 ```
 devops/template_cloudformation/lamp_on_ec2.template.json
 ```
