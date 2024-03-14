@@ -54,8 +54,8 @@
     "InstanceType" : {
       "Description" : "WebServer EC2 instance",
       "Type" : "String",
-      "Default" : "t3.medium",
-      "AllowedValues" : ["t3.medium"],
+      "Default" : "t3.large",
+      "AllowedValues" : ["t3.large"],
       "ConstraintDescription" : "Deve essere una valida immagine Ec2."
     },
 
@@ -72,7 +72,7 @@
   
   "Mappings" : {
     "AWSInstanceType2Arch" : {
-      "t3.medium"    : { "Arch" : "HVM64"  }
+      "t3.large"    : { "Arch" : "HVM64"  }
     },
 
     "AWSInstanceType2NATArch" : {
