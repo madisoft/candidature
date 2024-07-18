@@ -11,6 +11,8 @@ I posti possono essere disponibili, selezionati o già prenotati:
 - Quando un utente clicca su un posto selezionato, il posto deve tornare disponibile.
 - Quando un utente clicca su un posto già prenotato, non deve poterlo selezionare.
 
+Memorizzare lo stato dei posti in locale, in modo che l'utente non perda le informazioni ricaricando la pagina.
+
 L'app mostra l'elenco dei posti selezionati e una form con un campo di input per inserire il nome della prenotazione e un tasto per confermare la prenotazione.
 La prenotazione richiede che sia selezionato almeno un posto e che il nome della prenotazione non sia vuoto.
 
