@@ -7,21 +7,12 @@ assegnare una materia in uno slot disponibile seguendo alcune regole di validazi
 
 ### Interfaccia Utente
 
-Una tabella settimanale (da lunedì a venerdì) con righe per le ore (es. "08:00-09:00", "09:00-10:00") e colonne per i giorni della settimana.
-Ogni cella rappresenta una lezione e, se valorizzata, deve contenere:
+Una tabella settimanale (da lunedì a venerdì) con righe per le ore (es. "08:00", "09:00", "10:00") e colonne per i giorni della settimana.
+Ogni cella rappresenta una lezione e, se valorizzata, mostra la materia in quell'ora di lezione. Ogni giorno è diviso in sei ore di lezione.
 
-- Materia
-- Docente assegnato
-
-Quando si seleziona una cella appare un form laterale per aggiungere o modificare una lezione con i seguenti campi:
-
-- Materia selezionabile da un elenco
-- Docente selezionabile da un elenco
+Quando si seleziona una cella appare un form laterale per aggiungere o modificare la materia della lezione tramite un campo di input.
 
 ### Specifiche
-
-- Ogni docente può essere associato a qualsiasi materia.
-- Ogni giorno è diviso in sei ore di lezione.
 
 Quando viene inserita una lezione possono essere mostrati eventuali errori di validazione:
 
@@ -33,7 +24,7 @@ Quando viene inserita una lezione possono essere mostrati eventuali errori di va
 - Persistenza dei dati al refresh della pagina.
 - Report riepilogativo che mostri:
   - Ore totali per materia.
-  - Ore totali per docente.
+  - N° totale di materie nella settimana.
 
 ## Dettagli tecnici
 
